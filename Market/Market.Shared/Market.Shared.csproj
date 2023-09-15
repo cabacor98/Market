@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Market.API\Market.API.csproj" />
+    <ProjectReference Include="..\Market.WEB\Market.WEB.csproj" />
+  </ItemGroup>
+
 </Project>
