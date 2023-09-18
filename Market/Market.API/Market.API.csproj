@@ -18,8 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Market.WEB\Market.WEB.csproj" />
     <ProjectReference Include="..\Market.Shared\Market.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

@@ -8,10 +8,14 @@ namespace Market.API.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public DbSet<Country> Countries { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-       
-    }
+
+
+    
 }
