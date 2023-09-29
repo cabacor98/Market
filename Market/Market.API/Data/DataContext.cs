@@ -12,6 +12,8 @@ namespace Market.API.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Country>().HasIndex(c => c.Name).IsUnique();
         }
     }
 
