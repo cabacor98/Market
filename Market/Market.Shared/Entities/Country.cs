@@ -14,5 +14,7 @@ namespace Market.Shared.Entities
         [MaxLength (100, ErrorMessage ="El campo {0} tiene un maximo de 100 caracteres")]
         [Required(ErrorMessage ="El campo (0) no puede ir vacio.")]
         public string? Name { get; set; }
+
+        public ICollection<State> States { get; set; }
     }
 }
